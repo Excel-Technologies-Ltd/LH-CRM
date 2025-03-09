@@ -108,9 +108,10 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Lead": "bh_crm.override.lead.NewLead",
+	"Opportunity": "bh_crm.override.opportunity.NewOpportunity"
+}
 
 # Document Events
 # ---------------
@@ -213,3 +214,42 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"bh_crm.auth.validate"
 # ]
+
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Opportunity-passport",
+                    "Opportunity-gender",
+                    "Opportunity-mobile",
+                    "Opportunity-email",
+                    "Opportunity-dob",
+                    "Opportunity-last_name",
+                    "Opportunity-first_name",
+                    "Lead-passport_number",
+                    "Lead-dob",
+                    "Lead-hospital",
+                ],
+            ]
+        ],
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Lead-middle_name-hidden",
+                    "Lead-main-field_order",
+                    "Opportunity-main-field_order"
+                ],
+            ]
+        ],
+    }
+]

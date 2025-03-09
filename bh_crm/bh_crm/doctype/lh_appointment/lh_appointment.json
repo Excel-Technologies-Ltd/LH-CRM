@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-08 15:52:15.778467",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "referral_from",
+  "first_name",
+  "gender",
+  "passport",
+  "column_break_zzaix",
+  "last_name",
+  "dob",
+  "email",
+  "mobile",
+  "section_break_xknu3",
+  "emergency_contact",
+  "emergency_email",
+  "column_break_bofai",
+  "emergency_mobile",
+  "relationship",
+  "section_break_dojmb",
+  "preferred_doctor",
+  "preferred_date",
+  "preferred_time",
+  "column_break_kzpho",
+  "preferred_specialty",
+  "purpose_of_appointment",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "referral_from",
+   "fieldtype": "Link",
+   "label": "Referral From",
+   "options": "Lead"
+  },
+  {
+   "fetch_from": "referral_from.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "referral_from.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fetch_from": "referral_from.passport_number",
+   "fieldname": "passport",
+   "fieldtype": "Data",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "column_break_zzaix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "referral_from.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fetch_from": "referral_from.dob",
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "DOB"
+  },
+  {
+   "fetch_from": "referral_from.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "referral_from.mobile_no",
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "section_break_xknu3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emergency_contact",
+   "fieldtype": "Data",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "emergency_email",
+   "fieldtype": "Data",
+   "label": "Emergency Email"
+  },
+  {
+   "fieldname": "column_break_bofai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emergency_mobile",
+   "fieldtype": "Data",
+   "label": "Emergency Mobile"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "Parent\nSibling\nGrandparent\nParent-in-law\nSpouse\nFriend"
+  },
+  {
+   "fieldname": "section_break_dojmb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "preferred_doctor",
+   "fieldtype": "Data",
+   "label": "Preferred Doctor"
+  },
+  {
+   "fieldname": "preferred_specialty",
+   "fieldtype": "Data",
+   "label": "Preferred Specialty"
+  },
+  {
+   "fieldname": "preferred_date",
+   "fieldtype": "Date",
+   "label": "Preferred Date"
+  },
+  {
+   "fieldname": "preferred_time",
+   "fieldtype": "Data",
+   "label": "Preferred Time"
+  },
+  {
+   "fieldname": "purpose_of_appointment",
+   "fieldtype": "Data",
+   "label": "Purpose of Appointment"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_kzpho",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-08 15:58:16.370403",
+ "modified_by": "Administrator",
+ "module": "Bh Crm",
+ "name": "LH Appointment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

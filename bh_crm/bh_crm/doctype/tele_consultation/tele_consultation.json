@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-08 16:12:32.317725",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "referral_from",
+  "first_name",
+  "gender",
+  "passport",
+  "height",
+  "column_break_zzaix",
+  "last_name",
+  "dob",
+  "email",
+  "mobile",
+  "weight",
+  "section_break_xknu3",
+  "allergy",
+  "diagnosis",
+  "column_break_m1ojz",
+  "co_morbidities",
+  "follow_up_case",
+  "section_break_nuyzt",
+  "chief_complaints"
+ ],
+ "fields": [
+  {
+   "fieldname": "referral_from",
+   "fieldtype": "Link",
+   "label": "Referral From",
+   "options": "Lead"
+  },
+  {
+   "fetch_from": "referral_from.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "referral_from.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fetch_from": "referral_from.passport_number",
+   "fieldname": "passport",
+   "fieldtype": "Data",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Height",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_zzaix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "referral_from.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fetch_from": "referral_from.dob",
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "DOB"
+  },
+  {
+   "fetch_from": "referral_from.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "referral_from.mobile_no",
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "section_break_xknu3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "allergy",
+   "fieldtype": "Select",
+   "label": "Allergy",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Data",
+   "label": "Diagnosis"
+  },
+  {
+   "fieldname": "co_morbidities",
+   "fieldtype": "Data",
+   "label": "Co morbidities"
+  },
+  {
+   "fieldname": "follow_up_case",
+   "fieldtype": "Data",
+   "label": "Follow up case"
+  },
+  {
+   "fieldname": "chief_complaints",
+   "fieldtype": "Small Text",
+   "label": "Chief Complaints"
+  },
+  {
+   "fieldname": "column_break_m1ojz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nuyzt",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-09 11:34:12.820649",
+ "modified_by": "Administrator",
+ "module": "Bh Crm",
+ "name": "Tele Consultation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

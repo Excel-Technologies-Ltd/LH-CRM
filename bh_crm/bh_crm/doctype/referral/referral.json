@@ -1,0 +1,257 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-08 15:35:27.491749",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "referral_from",
+  "first_name",
+  "gender",
+  "passport",
+  "column_break_zzaix",
+  "last_name",
+  "dob",
+  "email",
+  "mobile",
+  "section_break_xknu3",
+  "emergency_contact",
+  "emergency_email",
+  "column_break_bofai",
+  "emergency_mobile",
+  "relationship",
+  "section_break_dojmb",
+  "insurance",
+  "insurance_company",
+  "insurance_no",
+  "column_break_g32nx",
+  "interpretor",
+  "language",
+  "visa_required",
+  "section_break_c1upt",
+  "history_of_illness",
+  "past_medical_history",
+  "column_break_wliov",
+  "investigations",
+  "medications",
+  "section_break_bdcyp",
+  "provisional_diagnosis",
+  "have_allergy",
+  "allergies",
+  "column_break_p1iwj",
+  "reason_for_referral",
+  "special_needs"
+ ],
+ "fields": [
+  {
+   "fieldname": "referral_from",
+   "fieldtype": "Link",
+   "label": "Referral From",
+   "options": "Lead"
+  },
+  {
+   "fetch_from": "referral_from.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "referral_from.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fetch_from": "referral_from.dob",
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "DOB"
+  },
+  {
+   "fetch_from": "referral_from.passport_number",
+   "fieldname": "passport",
+   "fieldtype": "Data",
+   "label": "Passport"
+  },
+  {
+   "fetch_from": "referral_from.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "referral_from.mobile_no",
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "emergency_contact",
+   "fieldtype": "Data",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "emergency_email",
+   "fieldtype": "Data",
+   "label": "Emergency Email"
+  },
+  {
+   "fieldname": "emergency_mobile",
+   "fieldtype": "Data",
+   "label": "Emergency Mobile"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Select",
+   "label": "Relationship",
+   "options": "Parent\nSibling\nGrandparent\nParent-in-law\nSpouse\nFriend"
+  },
+  {
+   "fetch_from": "referral_from.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Select",
+   "label": "Do you have Insurance?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "insurance_company",
+   "fieldtype": "Data",
+   "label": "Insurance Company"
+  },
+  {
+   "fieldname": "insurance_no",
+   "fieldtype": "Data",
+   "label": "Insurance No"
+  },
+  {
+   "fieldname": "interpretor",
+   "fieldtype": "Select",
+   "label": "Do you need Interpretor?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.interpretor==\"Yes\"",
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "label": "Language"
+  },
+  {
+   "fieldname": "visa_required",
+   "fieldtype": "Data",
+   "label": "Visa Required"
+  },
+  {
+   "fieldname": "history_of_illness",
+   "fieldtype": "Small Text",
+   "label": "History of illness"
+  },
+  {
+   "fieldname": "past_medical_history",
+   "fieldtype": "Small Text",
+   "label": "Past medical history"
+  },
+  {
+   "fieldname": "investigations",
+   "fieldtype": "Small Text",
+   "label": "Investigations"
+  },
+  {
+   "fieldname": "provisional_diagnosis",
+   "fieldtype": "Data",
+   "label": "Provisional Diagnosis"
+  },
+  {
+   "fieldname": "have_allergy",
+   "fieldtype": "Select",
+   "label": "Have Allergy",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "allergies",
+   "fieldtype": "Data",
+   "label": "Allergies"
+  },
+  {
+   "fieldname": "medications",
+   "fieldtype": "Small Text",
+   "label": "Medications"
+  },
+  {
+   "fieldname": "reason_for_referral",
+   "fieldtype": "Data",
+   "label": "Reason for Referral"
+  },
+  {
+   "fieldname": "special_needs",
+   "fieldtype": "Data",
+   "label": "Special Needs"
+  },
+  {
+   "fieldname": "column_break_zzaix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xknu3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_bofai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dojmb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_g32nx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_c1upt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_bdcyp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wliov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_p1iwj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-08 15:50:07.518486",
+ "modified_by": "Administrator",
+ "module": "Bh Crm",
+ "name": "Referral",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
