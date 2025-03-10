@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-03-08 15:52:15.778467",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "referral_from",
   "first_name",
   "gender",
@@ -16,6 +18,7 @@
   "dob",
   "email",
   "mobile",
+  "nationality",
   "section_break_xknu3",
   "emergency_contact",
   "emergency_email",
@@ -70,7 +73,7 @@
    "fetch_from": "referral_from.dob",
    "fieldname": "dob",
    "fieldtype": "Data",
-   "label": "DOB"
+   "label": "Date of Birth"
   },
   {
    "fetch_from": "referral_from.email_id",
@@ -96,7 +99,8 @@
   {
    "fieldname": "emergency_email",
    "fieldtype": "Data",
-   "label": "Emergency Email"
+   "label": "Emergency Email",
+   "options": "Email"
   },
   {
    "fieldname": "column_break_bofai",
@@ -105,13 +109,14 @@
   {
    "fieldname": "emergency_mobile",
    "fieldtype": "Data",
-   "label": "Emergency Mobile"
+   "label": "Emergency Mobile",
+   "options": "Phone"
   },
   {
    "fieldname": "relationship",
    "fieldtype": "Select",
    "label": "Relationship",
-   "options": "Parent\nSibling\nGrandparent\nParent-in-law\nSpouse\nFriend"
+   "options": "\nParent\nSibling\nGrandparent\nParent-in-law\nSpouse\nFriend"
   },
   {
    "fieldname": "section_break_dojmb",
@@ -150,14 +155,28 @@
   {
    "fieldname": "column_break_kzpho",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LH-APP-.YY.-"
+  },
+  {
+   "default": "Bangladeshi",
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality",
+   "options": "\n"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-08 15:58:16.370403",
+ "modified": "2025-03-10 12:28:34.723238",
  "modified_by": "Administrator",
  "module": "Bh Crm",
  "name": "LH Appointment",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

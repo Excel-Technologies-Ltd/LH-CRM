@@ -8,14 +8,16 @@ class NewLead(Lead):  # Ensure it correctly extends Document
         creation_date = self.creation
 
         # Fetch the latest lead creation date for the same passport within 90 days
-        check_existing_passport = frappe.db.get_value(
-            "Lead", 
-            {"passport_number": passport_number}, 
-            ["creation"]
-        )
+        check_existing_passport = None
+        if passport_number:
+            check_existing_passport = frappe.db.get_value(
+                "Lead", 
+                {"passport_number": passport_number}, 
+                ["creation"]
+            )
         print(check_existing_passport)
 
-        if check_existing_passport:
+        if check_existing_passport and passport_number:
             last_creation_date = frappe.utils.get_datetime(check_existing_passport)
             current_creation_date = frappe.utils.get_datetime(creation_date)
 

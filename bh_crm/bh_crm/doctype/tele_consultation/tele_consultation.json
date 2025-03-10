@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-03-08 16:12:32.317725",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "referral_from",
   "first_name",
   "gender",
@@ -25,7 +27,19 @@
   "co_morbidities",
   "follow_up_case",
   "section_break_nuyzt",
-  "chief_complaints"
+  "chief_complaints",
+  "column_break_zgfpr",
+  "history_of_present_illness",
+  "section_break_joisa",
+  "past_medical_history",
+  "column_break_uuld0",
+  "relevent_investigation",
+  "section_break_nwuff",
+  "medication_list",
+  "section_break_8tdsb",
+  "reason_for_consultation",
+  "prepared_by",
+  "designation"
  ],
  "fields": [
   {
@@ -129,14 +143,77 @@
   {
    "fieldname": "section_break_nuyzt",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "history_of_present_illness",
+   "fieldtype": "Small Text",
+   "label": "History of present illness"
+  },
+  {
+   "fieldname": "past_medical_history",
+   "fieldtype": "Small Text",
+   "label": "Past Medical History"
+  },
+  {
+   "fieldname": "relevent_investigation",
+   "fieldtype": "Small Text",
+   "label": "Summary of relevant investigation reports"
+  },
+  {
+   "fieldname": "reason_for_consultation",
+   "fieldtype": "Data",
+   "label": "Reason for consultation"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "medication_list",
+   "fieldtype": "Table",
+   "label": "Medication List",
+   "options": "LH Medication List"
+  },
+  {
+   "fieldname": "column_break_zgfpr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uuld0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_joisa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_nwuff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8tdsb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LH-TM-.YY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-09 11:34:12.820649",
+ "modified": "2025-03-10 11:16:07.144759",
  "modified_by": "Administrator",
  "module": "Bh Crm",
  "name": "Tele Consultation",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

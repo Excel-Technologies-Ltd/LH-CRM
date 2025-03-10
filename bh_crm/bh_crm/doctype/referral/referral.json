@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-03-08 15:35:27.491749",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "referral_from",
   "first_name",
   "gender",
@@ -67,7 +69,7 @@
    "fetch_from": "referral_from.dob",
    "fieldname": "dob",
    "fieldtype": "Data",
-   "label": "DOB"
+   "label": "Date of Birth"
   },
   {
    "fetch_from": "referral_from.passport_number",
@@ -79,13 +81,15 @@
    "fetch_from": "referral_from.email_id",
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "options": "Email"
   },
   {
    "fetch_from": "referral_from.mobile_no",
    "fieldname": "mobile",
    "fieldtype": "Data",
-   "label": "Mobile"
+   "label": "Mobile",
+   "options": "Phone"
   },
   {
    "fieldname": "emergency_contact",
@@ -95,18 +99,20 @@
   {
    "fieldname": "emergency_email",
    "fieldtype": "Data",
-   "label": "Emergency Email"
+   "label": "Emergency Email",
+   "options": "Email"
   },
   {
    "fieldname": "emergency_mobile",
    "fieldtype": "Data",
-   "label": "Emergency Mobile"
+   "label": "Emergency Mobile",
+   "options": "Phone"
   },
   {
    "fieldname": "relationship",
    "fieldtype": "Select",
    "label": "Relationship",
-   "options": "Parent\nSibling\nGrandparent\nParent-in-law\nSpouse\nFriend"
+   "options": "\nParent\nSibling\nGrandparent\nParent-in-law\nSpouse\nFriend"
   },
   {
    "fetch_from": "referral_from.last_name",
@@ -118,14 +124,16 @@
    "fieldname": "insurance",
    "fieldtype": "Select",
    "label": "Do you have Insurance?",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
+   "depends_on": "eval:doc.insurance==\"Yes\"",
    "fieldname": "insurance_company",
    "fieldtype": "Data",
    "label": "Insurance Company"
   },
   {
+   "depends_on": "eval:doc.insurance==\"Yes\"",
    "fieldname": "insurance_no",
    "fieldtype": "Data",
    "label": "Insurance No"
@@ -144,8 +152,9 @@
   },
   {
    "fieldname": "visa_required",
-   "fieldtype": "Data",
-   "label": "Visa Required"
+   "fieldtype": "Select",
+   "label": "Do you require visa assistance?",
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "history_of_illness",
@@ -170,10 +179,11 @@
   {
    "fieldname": "have_allergy",
    "fieldtype": "Select",
-   "label": "Have Allergy",
-   "options": "Yes\nNo"
+   "label": "Have Allergy?",
+   "options": "\nYes\nNo"
   },
   {
+   "depends_on": "eval:doc.have_allergy==\"Yes\"",
    "fieldname": "allergies",
    "fieldtype": "Data",
    "label": "Allergies"
@@ -228,14 +238,21 @@
   {
    "fieldname": "column_break_p1iwj",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LH-REF-.YY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-08 15:50:07.518486",
+ "modified": "2025-03-10 11:25:23.557899",
  "modified_by": "Administrator",
  "module": "Bh Crm",
  "name": "Referral",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

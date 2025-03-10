@@ -234,6 +234,7 @@ fixtures = [
                     "Lead-passport_number",
                     "Lead-dob",
                     "Lead-hospital",
+                    "Lead-purpose",
                 ],
             ]
         ],
