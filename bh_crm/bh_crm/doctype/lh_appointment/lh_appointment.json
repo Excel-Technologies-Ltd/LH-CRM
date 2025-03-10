@@ -12,12 +12,12 @@
   "referral_from",
   "first_name",
   "gender",
-  "passport",
+  "passport_number",
   "column_break_zzaix",
   "last_name",
   "dob",
-  "email",
-  "mobile",
+  "email_id",
+  "mobile_no",
   "nationality",
   "section_break_xknu3",
   "emergency_contact",
@@ -27,8 +27,8 @@
   "relationship",
   "section_break_dojmb",
   "preferred_doctor",
-  "preferred_date",
-  "preferred_time",
+  "appointment_date",
+  "appointment_time",
   "column_break_kzpho",
   "preferred_specialty",
   "purpose_of_appointment",
@@ -38,7 +38,7 @@
   {
    "fieldname": "referral_from",
    "fieldtype": "Link",
-   "label": "Referral From",
+   "label": "Appointment From",
    "options": "Lead"
   },
   {
@@ -52,12 +52,6 @@
    "fieldname": "gender",
    "fieldtype": "Data",
    "label": "Gender"
-  },
-  {
-   "fetch_from": "referral_from.passport_number",
-   "fieldname": "passport",
-   "fieldtype": "Data",
-   "label": "Passport"
   },
   {
    "fieldname": "column_break_zzaix",
@@ -74,18 +68,6 @@
    "fieldname": "dob",
    "fieldtype": "Data",
    "label": "Date of Birth"
-  },
-  {
-   "fetch_from": "referral_from.email_id",
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email"
-  },
-  {
-   "fetch_from": "referral_from.mobile_no",
-   "fieldname": "mobile",
-   "fieldtype": "Data",
-   "label": "Mobile"
   },
   {
    "fieldname": "section_break_xknu3",
@@ -133,16 +115,6 @@
    "label": "Preferred Specialty"
   },
   {
-   "fieldname": "preferred_date",
-   "fieldtype": "Date",
-   "label": "Preferred Date"
-  },
-  {
-   "fieldname": "preferred_time",
-   "fieldtype": "Data",
-   "label": "Preferred Time"
-  },
-  {
    "fieldname": "purpose_of_appointment",
    "fieldtype": "Data",
    "label": "Purpose of Appointment"
@@ -168,11 +140,41 @@
    "fieldtype": "Data",
    "label": "Nationality",
    "options": "\n"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": " Appointment Date"
+  },
+  {
+   "fieldname": "appointment_time",
+   "fieldtype": "Time",
+   "label": "Appointment Time"
+  },
+  {
+   "fetch_from": "referral_from.passport_number",
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport"
+  },
+  {
+   "fetch_from": "referral_from.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "referral_from.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-10 12:28:34.723238",
+ "modified": "2025-03-10 17:09:31.295838",
  "modified_by": "Administrator",
  "module": "Bh Crm",
  "name": "LH Appointment",

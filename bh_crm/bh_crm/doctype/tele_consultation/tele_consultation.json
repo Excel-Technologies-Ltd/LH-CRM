@@ -12,13 +12,13 @@
   "referral_from",
   "first_name",
   "gender",
-  "passport",
+  "passport_number",
   "height",
   "column_break_zzaix",
   "last_name",
   "dob",
-  "email",
-  "mobile",
+  "email_id",
+  "mobile_no",
   "weight",
   "section_break_xknu3",
   "allergy",
@@ -45,7 +45,7 @@
   {
    "fieldname": "referral_from",
    "fieldtype": "Link",
-   "label": "Referral From",
+   "label": "Tele Consultancy  From",
    "options": "Lead"
   },
   {
@@ -59,12 +59,6 @@
    "fieldname": "gender",
    "fieldtype": "Data",
    "label": "Gender"
-  },
-  {
-   "fetch_from": "referral_from.passport_number",
-   "fieldname": "passport",
-   "fieldtype": "Data",
-   "label": "Passport"
   },
   {
    "fieldname": "height",
@@ -87,18 +81,6 @@
    "fieldname": "dob",
    "fieldtype": "Data",
    "label": "DOB"
-  },
-  {
-   "fetch_from": "referral_from.email_id",
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email"
-  },
-  {
-   "fetch_from": "referral_from.mobile_no",
-   "fieldname": "mobile",
-   "fieldtype": "Data",
-   "label": "Mobile"
   },
   {
    "fieldname": "weight",
@@ -205,11 +187,29 @@
    "fieldtype": "Select",
    "label": "Naming Series",
    "options": "LH-TM-.YY.-"
+  },
+  {
+   "fetch_from": "referral_from.passport_number",
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport"
+  },
+  {
+   "fetch_from": "referral_from.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fetch_from": "referral_from.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-10 11:16:07.144759",
+ "modified": "2025-03-10 17:08:23.886791",
  "modified_by": "Administrator",
  "module": "Bh Crm",
  "name": "Tele Consultation",

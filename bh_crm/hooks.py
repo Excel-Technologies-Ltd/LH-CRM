@@ -217,10 +217,10 @@ fixtures = [
                 "name",
                 "in",
                 [
-                    "Opportunity-passport",
+                    "Opportunity-passport_number",
                     "Opportunity-gender",
-                    "Opportunity-mobile",
-                    "Opportunity-email",
+                    "Opportunity-mobile_no",
+                    "Opportunity-email_id",
                     "Opportunity-dob",
                     "Opportunity-last_name",
                     "Opportunity-first_name",
@@ -228,6 +228,7 @@ fixtures = [
                     "Lead-dob",
                     "Lead-hospital",
                     "Lead-purpose",
+                    "Lead-sub_agent"
                 ],
             ]
         ],
@@ -241,7 +242,24 @@ fixtures = [
                 [
                     "Lead-middle_name-hidden",
                     "Lead-main-field_order",
-                    "Opportunity-main-field_order"
+                    "Opportunity-main-field_order",
+                    "Lead-last_name-label",
+                    "Lead-first_name-label",
+                    "Referral-naming_series-options",
+                    "Tele Consultation-naming_series-options",
+                    "Lead-request_type-hidden"
+                ],
+            ]
+        ],
+    },
+    {
+        "dt": "Lead Source",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Sub Agent"
                 ],
             ]
         ],

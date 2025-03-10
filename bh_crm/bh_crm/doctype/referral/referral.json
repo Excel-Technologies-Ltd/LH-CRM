@@ -12,12 +12,12 @@
   "referral_from",
   "first_name",
   "gender",
-  "passport",
+  "passport_number",
   "column_break_zzaix",
   "last_name",
   "dob",
-  "email",
-  "mobile",
+  "email_id",
+  "mobile_no",
   "section_break_xknu3",
   "emergency_contact",
   "emergency_email",
@@ -70,26 +70,6 @@
    "fieldname": "dob",
    "fieldtype": "Data",
    "label": "Date of Birth"
-  },
-  {
-   "fetch_from": "referral_from.passport_number",
-   "fieldname": "passport",
-   "fieldtype": "Data",
-   "label": "Passport"
-  },
-  {
-   "fetch_from": "referral_from.email_id",
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email",
-   "options": "Email"
-  },
-  {
-   "fetch_from": "referral_from.mobile_no",
-   "fieldname": "mobile",
-   "fieldtype": "Data",
-   "label": "Mobile",
-   "options": "Phone"
   },
   {
    "fieldname": "emergency_contact",
@@ -244,11 +224,31 @@
    "fieldtype": "Select",
    "label": "Naming Series",
    "options": "LH-REF-.YY.-"
+  },
+  {
+   "fetch_from": "referral_from.passport_number",
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport"
+  },
+  {
+   "fetch_from": "referral_from.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "referral_from.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-10 11:25:23.557899",
+ "modified": "2025-03-10 17:06:34.674755",
  "modified_by": "Administrator",
  "module": "Bh Crm",
  "name": "Referral",

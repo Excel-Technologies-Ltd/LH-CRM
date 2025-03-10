@@ -15,10 +15,10 @@ def make_referral(source_name, target_doc=None):
 					"first_name": "first_name",
 					"last_name": "last_name",
 					"dob": "dob",
-					"email": "email",
-					"mobile": "mobile",
+					"email_id": "email_id",
+					"mobile_no": "mobile_no",
 					"gender": "gender",
-                    "passport": "passport",
+                    "passport_number": "passport_number",
                      
 				}
 			}
@@ -45,10 +45,10 @@ def make_lh_appointment(source_name, target_doc=None):
 					"first_name": "first_name",
 					"last_name": "last_name",
 					"dob": "dob",
-					"email": "email",
-					"mobile": "mobile",
+					"email_id": "email_id",
+					"mobile_no": "mobile_no",
 					"gender": "gender",
-                     "passport": "passport",
+                     "passport_number": "passport_number",
                      
 				}
 			}
@@ -75,10 +75,10 @@ def make_tele_consultation(source_name, target_doc=None):
 					"first_name": "first_name",
 					"last_name": "last_name",
 					"dob": "dob",
-					"email": "email",
-					"mobile": "mobile",
+					"email_id": "email_id",
+					"mobile_no": "mobile_no",
 					"gender": "gender",
-                    "passport": "passport",
+                    "passport_number": "passport_number",
                      
 				}
 			}
