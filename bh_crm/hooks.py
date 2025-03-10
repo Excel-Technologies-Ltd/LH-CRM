@@ -128,23 +128,16 @@ override_doctype_class = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"bh_crm.tasks.all"
-# 	],
-# 	"daily": [
-# 		"bh_crm.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"bh_crm.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"bh_crm.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"bh_crm.tasks.monthly"
-# 	],
-# }
+
+
+scheduler_events = {
+   "cron": {
+        "* * * * *": [
+            "frappe.email.doctype.email_account.email_account.pull"
+        ]
+    },
+}
+
 
 # Testing
 # -------
